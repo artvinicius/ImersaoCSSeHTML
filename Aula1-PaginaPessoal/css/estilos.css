@@ -1,12 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url('http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg');
-  background-size: auto 100vh; 
+  background-image: url('../img/fundo.jpg');
+  background-size: auto 100vh;
   font-family: Arial;
   height: 100vh;
 }
 
+/* Para separar o título das informações */
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu {
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  /* top:0; Para o menu ficar colado no topo da página */
 }
 
 .menu ul {
@@ -15,7 +33,14 @@ body {
 }
 
 .menu li {
- list-style: none; 
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  /* background: rgb(13, 102, 72); */
+  /* Serve para aumentar a área de clique das opções do MENU  OBS o valor que vem no display: inline ai só mudar para block*/
 }
 
 a {
@@ -27,12 +52,18 @@ a:hover {
   text-decoration: underline;
 }
 
-.site-subtitle, 
+.site-subtitle,
 .site-title {
   color: whitesmoke;
   text-align: center;
 }
 
 .site-subtitle {
- font-style: italic;
+  font-style: italic;
+}
+
+/* Para diminuir as imagens deixando elas pequenas  */
+.img-portfolio {
+  height: 180px;
+  width: 180px;
 }
