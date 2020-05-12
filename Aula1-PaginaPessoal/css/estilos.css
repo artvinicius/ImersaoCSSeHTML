@@ -9,7 +9,22 @@ body {
   background-size: auto 100vh;
   font-family: Arial;
   height: 100vh;
+  font-size: 12px;
 }
+
+/* Se a tela tiver pelo menos 400px vai carregar estes esilos*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+/*breakpoint*/
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 
 /* Para separar o título das informações */
 header {
@@ -56,6 +71,11 @@ a:hover {
 .site-title {
   color: whitesmoke;
   text-align: center;
+}
+
+/*Para ajustar o tamanho da fonte principal dependendo da telea*/
+.site-title{
+  font-size: 4em;
 }
 
 .site-subtitle {
