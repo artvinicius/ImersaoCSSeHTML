@@ -1,9 +1,9 @@
 # Imersao CSS
 Imersão CSS3 e HTML5
 
-# Joguinho para praticar o flebox no CSS :https://flexboxfroggy.com/#pt-br
+ Joguinho para praticar o flebox no CSS :https://flexboxfroggy.com/#pt-br
 
-## FLEXBOX FROGGY
+# FLEXBOX FROGGY
 Use justify-content de novo para levar os sapos às suas vitórias-régias. Lembre-se que essa propriedade CSS alinha os itens horizontalmente e aceita os seguintes valores:
 
 flex-start: Itens se alinham à esquerda do container.
