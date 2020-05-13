@@ -76,10 +76,11 @@ a:hover {
 /*Para ajustar o tamanho da fonte principal dependendo da telea*/
 .site-title{
   font-size: 4em;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 .site-subtitle {
-  font-style: italic;
+  font-style: Arial;
 }
 
 /* Para diminuir as imagens deixando elas pequenas  */
