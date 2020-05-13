@@ -7,7 +7,7 @@
 body {
   background-image: url('../img/fundo.jpg');
   background-size: auto 100vh;
-  font-family: Arial;
+  font-family: 'Source Code Pro', monospace;
   height: 100vh;
   font-size: 12px;
 }
@@ -18,6 +18,7 @@ body {
     font-size: 14px;
   }
 }
+
 /*breakpoint*/
 @media (min-width: 600px) {
   body {
@@ -73,18 +74,66 @@ a:hover {
   text-align: center;
 }
 
+
 /*Para ajustar o tamanho da fonte principal dependendo da telea*/
-.site-title{
+.site-title {
   font-size: 4em;
   font-family: 'Cinzel Decorative', cursive;
 }
 
 .site-subtitle {
   font-style: Arial;
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.8em; /*Espaçamento entre um titulo e o outro*/
+}
+
+/*Organizar as imagens do portifólio*/
+.portfolio {
+  padding: 2em;
+  height: 100vh;
+}
+
+.portfolio h2 {
+  font-family: 'Source Code Pro', monospace;
+  color: whitesmoke;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 1em;
+}
+
+@media (min-width: 560px) { /*Serve para dividir as imagens em colunas*/
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;/*Colunas de 240 por 240*/
+  }
+}
+
+@media (min-width: 880px) {  /*Quando a tela atingir 880 ele dividir em 3 fileiras*/
+  .portfolio .grid {
+    grid-template-columns: repeat(3,240px); /*Tres colunas de 240px*/
+    align-content: center;
+    justify-content: center; /*Centraliazr os elementos na página*/
+    height: calc(100vh - 8em - 48px);
+  }
+}
+.portfolio figure {
+  text-align: center;
 }
 
 /* Para diminuir as imagens deixando elas pequenas  */
 .img-portfolio {
   height: 180px;
-  width: 180px;
+  width: 240px;
+  object-fit: cover; /*Todas imagens ocupam o mesmo espaço*/
+  object-position: left bottom; /*Ajusta as imagens dependendo o contexto*/
 }
+
+/* @media (min-width: 1200px) {
+  .img-portfolio {
+    height: auto;
+    width: 100%;
+  }
+} */
