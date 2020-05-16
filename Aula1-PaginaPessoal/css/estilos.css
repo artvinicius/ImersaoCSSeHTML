@@ -121,15 +121,13 @@ a:hover {
 .portfolio {
   padding: 2em;
   min-height: 100vh;
-  margin-left: auto; /*Para centralizar ao centro as informações*/
-  margin-right: auto; /*Para centralizar ao centro as informações*/
 }
 
 @media (min-windth: 1200px){ /*Quando a tela passar de 1200px ele centraliza tudo */
-.sobre,
-.contato,
-.portfolio {
-  max-width: 1200px;
+  .container {
+    margin-left: auto; /*Para centralizar ao centro as informações*/
+    margin-right: auto; /*Para centralizar ao centro as informações*/
+    max-width: 1200px;
   }
 }
 
