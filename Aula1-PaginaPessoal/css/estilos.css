@@ -87,12 +87,13 @@ a:hover {
   line-height: 1.8em; /*Espaçamento entre um titulo e o outro*/
 }
 
+.contato,
 /*Organizar as imagens do portifólio*/
 .portfolio {
   padding: 2em;
-  height: 100vh;
+  min-height: 100vh;
 }
-
+.contato h2,
 .portfolio h2 {
   font-family: 'Source Code Pro', monospace;
   color: whitesmoke;
@@ -129,6 +130,20 @@ a:hover {
   width: 240px;
   object-fit: cover; /*Todas imagens ocupam o mesmo espaço*/
   object-position: left bottom; /*Ajusta as imagens dependendo o contexto*/
+}
+
+.contato .icons{
+text-align: center;
+}
+
+.contato a {
+  color: white;
+  font-size: 10em;
+  
+}
+
+.contato a:hover{
+  text-decoration: none;
 }
 
 /* @media (min-width: 1200px) {
