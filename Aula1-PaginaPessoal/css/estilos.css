@@ -42,6 +42,7 @@ header {
   width: 100vw;
   top: 0;
   /* top:0; Para o menu ficar colado no topo da página */
+  z-index: 1;
 }
 
 .menu ul {
