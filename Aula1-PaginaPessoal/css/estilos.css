@@ -115,18 +115,38 @@ a:hover {
   line-height: 1.8em; /*Espaçamento entre um titulo e o outro*/
 }
 
+.sobre,
 .contato,
 /*Organizar as imagens do portifólio*/
 .portfolio {
   padding: 2em;
   min-height: 100vh;
+  margin-left: auto; /*Para centralizar ao centro as informações*/
+  margin-right: auto; /*Para centralizar ao centro as informações*/
 }
+
+@media (min-windth: 1200px){ /*Quando a tela passar de 1200px ele centraliza tudo */
+.sobre,
+.contato,
+.portfolio {
+  max-width: 1200px;
+  }
+}
+
+.sobre h2,
 .contato h2,
 .portfolio h2 {
   font-family: 'Source Code Pro', monospace;
   color: whitesmoke;
   margin-bottom: 0.5em;
   font-size: 2em;
+}
+
+.sobre p {
+  color: white;
+  margin-bottom: 1.4em ;
+  text-indent: 1.4em; /*Espaçamento dos paragrafos para trás*/
+  text-align: justify;
 }
 
 .portfolio .grid {
