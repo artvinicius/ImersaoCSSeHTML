@@ -59,6 +59,11 @@ header {
   /* Serve para aumentar a área de clique das opções do MENU  OBS o valor que vem no display: inline ai só mudar para block*/
 }
 
+.menu a:hover{
+  background-color: teal;
+  color: white;
+}
+
 a {
   color: rgb(36, 143, 143);
   text-decoration: none;
@@ -144,6 +149,7 @@ text-align: center;
 
 .contato a:hover{
   text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.753);
 }
 
 /* @media (min-width: 1200px) {
