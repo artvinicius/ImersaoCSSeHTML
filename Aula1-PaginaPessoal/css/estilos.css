@@ -209,9 +209,38 @@ a:hover {
   transition: transform 500ms;
 }
 
-.img-portfolio:hover {
+/* .img-portfolio:hover {
   transform: scale(1.2) rotate(-2deg);
   
+} */
+
+.flip-card{
+perspective: 500px;
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1.5s;
+}
+
+.flip-card:hover .card{
+  transform: rotateY(180deg);
+}
+
+.card-front, 
+.card-back{
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.card-back {
+  background-color: white;
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
 }
 
 .contato .icons{
