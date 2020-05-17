@@ -147,6 +147,36 @@ a:hover {
   text-align: justify;
 }
 
+.sobre a {
+  color: white; 
+  text-decoration: underline;
+}
+
+.sobre a:hover {
+  background-color: cyan;
+  text-decoration: none;
+}
+
+.sobre .avatar {
+  float: right;
+  margin-left: 2em ;
+}
+
+.sobre .avatar {   /*Para deixar a imagem redonda*/
+  /* border-radius: 50%; */
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  margin-left: 2em;
+  /* Site para pegar as formas da imagem https://bennettfeely.com/clippy/ */
+}
+
+@media (min-width: 600px){ /*Quando a tela aumentar muda o formato da imagem*/
+  .sobre .avatar {
+    float: right;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  }
+}
+
+
 .portfolio .grid {
   display: grid;
   gap: 1em;
