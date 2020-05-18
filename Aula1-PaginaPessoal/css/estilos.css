@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url('../img/fundo.jpg');
+  background-image: url('../img/fundonew.jpg');
   background-size: auto 100vh;
   font-family: 'Source Code Pro', monospace;
   height: 100vh;
@@ -64,7 +64,7 @@ header {
 
 .menu a:active,
 .menu a:hover{
-  background-color: teal;
+  background-color: rgb(5, 70, 70);
   color: white;
 }
 
@@ -205,7 +205,7 @@ a:hover {
   height: 180px;
   width: 240px;
   object-fit: cover; /*Todas imagens ocupam o mesmo espaço*/
-  object-position: left bottom; /*Ajusta as imagens dependendo o contexto*/
+  object-position: left bottom; /*Ajusta as imagens dependendo o contexto (left bottom,center)*/
   transition: transform 500ms;
 }
 
@@ -228,7 +228,7 @@ perspective: 500px;
   transform: rotateY(180deg);
 }
 
-.card-front, 
+.card-front,
 .card-back{
   backface-visibility: hidden;
   left: 0;
@@ -236,8 +236,14 @@ perspective: 500px;
   top: 0;
 }
 
+.flip-card figcaption{
+  color: white;
+}
+
+
 .card-back {
-  background-color: white;
+  background-color: rgba(5, 70, 70, 0.904);
+  color: white;
   height: 180px;
   width: 100%;
   transform: rotateY(180deg);
@@ -250,7 +256,7 @@ text-align: center;
 .contato a {
   color: white;
   font-size: 10em;
-  transition: text-shadow 1s;
+  transition: text-shadow 0s;
   
 }
 
